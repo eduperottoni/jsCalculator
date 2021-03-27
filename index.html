@@ -17,7 +17,9 @@
     <main>
         <section id='view'>
             <div id="view-fscreen">
-                <input type="text" name="input" id="view-fscreen-input" class="screen">
+                <div id="view-fscreen-input" class="screen">
+
+                </div>
             </div>
             <div id="view-rscreen" class='screen'>
                 teste
@@ -27,31 +29,32 @@
             <div class="line">
                 <input class='comand-button' id='c' type="button" value="C" onclick="">
                 <input class='comand-button' id='ce' type="button" value="CE" onclick="">
-                <input class='comand-button' id='/' type="button" value="/" onclick=" ">
+                <input class='comand-button' id='zero' type="button" value="0" onclick=" printOnInput(value)">
+                <input class='comand-button' id='divide' type="button" value="/" onclick=" printOnInput(value)">
             </div>
             <div class="line">
-                <input class='comand-button' id='7' type="button" value="7" onclick=''>
-                <input class='comand-button' id='8' type="button" value="8" onclick=''>
-                <input class='comand-button' id='9' type="button" value="9" onclick=''>
-                <input class='comand-button' id='x' type="button" value="x" onclick=''>
+                <input class='comand-button' id='seven' type="button" value="7" onclick='printOnInput(value)'>
+                <input class='comand-button' id='eigth' type="button" value="8" onclick='printOnInput(value)'>
+                <input class='comand-button' id='nine' type="button" value="9" onclick='printOnInput(value)'>
+                <input class='comand-button' id='multiply' type="button" value="x" onclick='printOnInput(value)'>
             </div>
             <div class="line">
-                <input class='comand-button' id='4' type="button" value="4" onclick=''>
-                <input class='comand-button' id='5' type="button" value="5" onclick=''>
-                <input class='comand-button' id='6' type="button" value="6" onclick=''>
-                <input class='comand-button' id='-' type="button" value="-" onclick=''>
+                <input class='comand-button' id='four' type="button" value="4" onclick='printOnInput(value)'>
+                <input class='comand-button' id='five' type="button" value="5" onclick='printOnInput(value)'>
+                <input class='comand-button' id='six' type="button" value="6" onclick='printOnInput(value)'>
+                <input class='comand-button' id='subtract' type="button" value="-" onclick='printOnInput(value)'>
             </div>
             <div class="line">
-                <input class='comand-button' id='1' type="button" value="1" onclick=''>
-                <input class='comand-button' id='2' type="button" value="2" onclick=''>
-                <input class='comand-button' id='3' type="button" value="3" onclick=''>
-                <input class='comand-button' id='+' type="button" value="+" onclick=''>
+                <input class='comand-button' id='one' type="button" value="1" onclick='printOnInput(value)'>
+                <input class='comand-button' id='two' type="button" value="2" onclick='printOnInput(value)'>
+                <input class='comand-button' id='three' type="button" value="3" onclick='printOnInput(value)'>
+                <input class='comand-button' id='sum' type="button" value="+" onclick='printOnInput(value)'>
             </div>
             <div class="line">
-                <input class='comand-button' id='(' type="button" value="(" onclick=''>
-                <input class='comand-button' id=')' type="button" value=')' onclick=''>
-                <input class='comand-button' id='.' type="button" value='.' onclick=''>
-                <input class='comand-button' id='=' type="button" value='=' onclick=''>
+                <input class='comand-button' id='open-par' type="button" value="(" onclick='printOnInput(value)'>
+                <input class='comand-button' id='close-par' type="button" value=')' onclick='printOnInput(value)'>
+                <input class='comand-button' id='dot' type="button" value='.' onclick='printOnInput(value)'>
+                <input class='comand-button' id='equal' type="button" value='=' onclick='calculate()'>
             </div>
         </section>
     </main>
