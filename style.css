@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    font:normal 20pt 'Abel', sans-serif;
+}
+
+body{
+    background: url(./images/quadro-negro-fundo.jpg) no-repeat;
+
+}
+
+header{
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+main section#view{
+    width: 100%;
+}
+
+section#view .screen{
+    outline:none;
+    width: 100%;
+    font:normal 20pt 'Abel', sans-serif;
+    background: #fff;
+    margin: 10px auto;
+}
+
+section#comands{
+    text-align: center;
+    margin:40px auto;
+}
+
+.comand-button{
+    width: 20%;
+    height: 100px;
+    margin: 5px;
+    font:normal 20pt 'Abel', sans-serif;
+}
+
+.comand-button#ce{
+    width: 43.25%;
+}
+
