@@ -6,5 +6,10 @@ function printOnInput(value){
     inputDiv.innerHTML += `${value}`  
 }
 
-function calculate(){}
+function calculate(){
+    countText = inputDiv.innerHTML
+    countTextSplited = countText.replace()
+    resDiv.innerHTML = `${countTextSplited}`
+}
 
+//FAZER 
