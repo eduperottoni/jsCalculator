@@ -1,5 +1,5 @@
 const btnEqual = document.querySelector('#equal')
-const inputDiv = document.querySelector('#view-fscreen-input')
+const inputDiv = document.querySelector('#view-fscreen-hist')
 const resDiv = document.querySelector('#view-rscreen')
 
 function printOnInput(value){
