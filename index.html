@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsCalculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+    <header>
+        <h1>jsCalculator</h1>
+    </header>
+    <main>
+        <section id='view'> 
+            <input type='text' id="view-fscreen-hist" class="screen">
+            <div id="view-rscreen" class='screen'>
+                
+            </div>
+        </section>
+        <section id='comands'>
+            <div class="line">
+                <input class='comand-button' id='c' type="button" value="C" onclick="">
+                <input class='comand-button' id='ce' type="button" value="CE" onclick="">
+                <input class='comand-button' id='divide' type="button" value="/" onclick=" printOnInput(value)">
+            </div>
+            <div class="line">
+                <input class='comand-button' id='seven' type="button" value="7" onclick='printOnInput(value)'>
+                <input class='comand-button' id='eigth' type="button" value="8" onclick='printOnInput(value)'>
+                <input class='comand-button' id='nine' type="button" value="9" onclick='printOnInput(value)'>
+                <input class='comand-button' id='multiply' type="button" value="x" onclick='printOnInput(value)'>
+            </div>
+            <div class="line">
+                <input class='comand-button' id='four' type="button" value="4" onclick='printOnInput(value)'>
+                <input class='comand-button' id='five' type="button" value="5" onclick='printOnInput(value)'>
+                <input class='comand-button' id='six' type="button" value="6" onclick='printOnInput(value)'>
+                <input class='comand-button' id='subtract' type="button" value="-" onclick='printOnInput(value)'>
+            </div>
+            <div class="line">
+                <input class='comand-button' id='one' type="button" value="1" onclick='printOnInput(value)'>
+                <input class='comand-button' id='two' type="button" value="2" onclick='printOnInput(value)'>
+                <input class='comand-button' id='three' type="button" value="3" onclick='printOnInput(value)'>
+                <input class='comand-button' id='sum' type="button" value="+" onclick='printOnInput(value)'>
+            </div>
+            <div class="line">
+                <input class='comand-button' id='zero' type="button" value="0" onclick='printOnInput(value)'>
+                <input class='comand-button' id='dot' type="button" value='.' onclick='printOnInput(value)'>
+                <input class='comand-button' id='equal' type="button" value='=' onclick='calculate()'>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class='modal-container'>
+        <div id="modal-erro" class="modal-content">
+            <button class='close-button'>X</button>
+            <h3>Erro!</h3>
+            <p>Operação inválida! Tente novamente...</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
