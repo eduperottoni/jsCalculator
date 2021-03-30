@@ -11,6 +11,7 @@ html, body{
 
 body{
     background: #FCC70A;
+    text-align: center;
 }
 
 header{
@@ -20,12 +21,16 @@ header{
     font-weight: 700;
 }
 
+header h1{
+    text-align: center;
+}
+
 main{
-    width: 80%;
+    width: 500px;
     height: 830px;
     margin: 0 auto;
+    padding: 10px;
     background: #C4C4C4;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +40,12 @@ main{
 
 main section#view{
     width: 100%;
+    height: 30%;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 section#view .screen{
@@ -42,7 +53,7 @@ section#view .screen{
     width: 85%;
     font-family: 'Lexend', sans-serif;
     background: #fff;
-    margin: 20px auto;
+    margin: 0 auto;
     border-radius: 15px;
     padding: 7.5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
@@ -52,7 +63,14 @@ section#view .screen{
     font-size: 2.1em;
     border-radius: 5px;
     min-height: 60px;
+    border:none;
 }
+
+.screen#view-fscreen-hist::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+
 
 .screen#view-rscreen{
     font-size: 4.2em;
@@ -62,18 +80,25 @@ section#view .screen{
 
 section#comands{
     text-align: center;
-    margin:0 auto;
     width: 100%;
-    height: 575px;
+    height: 70%;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+#comands .line{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .comand-button{
-    margin: 0px 10px;
-    width: 90px;
-    height:90px;
+    width: 20%;
+    max-width: 90px;
+    height: 80%;
+    max-height: 90px;
     font-family: 'Lexend', sans-serif;
     font-size: 2.2em;
     font-weight: 500;
@@ -86,7 +111,8 @@ section#comands{
 }
 
 .comand-button#equal, .comand-button#ce{
-    width: 200px;
+    width: 40%;
+    max-width: 200px;
 }
 
 .comand-button:hover{
@@ -94,4 +120,77 @@ section#comands{
     transition: 0.3s;
 }
 
+/* ESTILIZAÇÃO PARA MOBILE*/
+
+@media only screen and (max-width: 550px){
+    header{
+        margin: 20px auto;
+    }
+    main{
+        width: 400px;
+        height: 650px;
+    }
+    .screen#view-fscreen-hist{
+        font-size: 1.8em;
+        min-height: 50px;
+    }
+    .screen#view-rscreen{
+        font-size: 3em;
+        min-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    main{
+        width: 350px;
+        height: 500px;
+    }
+    .comand-button{
+        font-size: 1.5em; 
+        border-radius: 10px;
+    }
+    .screen#view-fscreen-hist{
+        font-size: 1.5em;
+        min-height: 40px;
+    }
+    .screen#view-rscreen{
+        font-size: 2.2em;
+        min-height: 60px;
+    }
+    
+}
+
+@media only screen and (max-width: 350px){
+    header{
+        margin: 10px auto;
+        font-size: 0.5em;
+    }
+    main{
+        width: 300px;
+        height: 450px;
+    }
+    .comand-button{
+        font-size: 1.2em; 
+    }
+    .screen#view-fscreen-hist{
+        font-size: 1em;
+        min-height: 40px;
+    }
+    .screen#view-rscreen{
+        font-size: 1.8em;
+        min-height: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 300px){
+    header{
+        margin: 10px auto;
+    }
+    main{
+        width: 90%;
+        height: 450px;
+        border-radius: 25px;
+    } 
+}
 

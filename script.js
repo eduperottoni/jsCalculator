@@ -3,13 +3,12 @@ const inputDiv = document.querySelector('#view-fscreen-hist')
 const resDiv = document.querySelector('#view-rscreen')
 
 function printOnInput(value){
-    inputDiv.innerHTML += `${value}`  
+    inputDiv.value += `${value}`
+    console.log(inputDiv.value)
 }
 
 function calculate(){
-    countText = inputDiv.innerHTML
-    countTextSplited = countText.replace()
-    resDiv.innerHTML = `${countTextSplited}`
 }
+
 
 //FAZER 
