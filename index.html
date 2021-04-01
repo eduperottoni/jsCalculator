@@ -18,15 +18,13 @@
     </header>
     <main>
         <section id='view'> 
-            <input type='text' id="view-fscreen-hist" class="screen">
-            <div id="view-rscreen" class='screen'>
-                
-            </div>
+            <input type='text' id="view-fscreen-hist" class="screen" disabled>
+            <input type ='text' id="view-rscreen" class='screen' disabled>
         </section>
         <section id='comands'>
             <div class="line">
-                <input class='comand-button' id='c' type="button" value="C" onclick="">
-                <input class='comand-button' id='ce' type="button" value="CE" onclick="">
+                <input class='comand-button' id='c' type="button" value="C" onclick="c()">
+                <input class='comand-button' id='ce' type="button" value="CE" onclick="ce()">
                 <input class='comand-button' id='divide' type="button" value="/" onclick=" printOnInput(value)">
             </div>
             <div class="line">
