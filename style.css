@@ -57,6 +57,7 @@ section#view .screen{
     border-radius: 15px;
     padding: 7.5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border:none;
 }
 
 .screen#view-fscreen-hist{
@@ -121,7 +122,47 @@ section#comands{
     transition: 0.3s;
 }
 
+footer{
+    width: 80%;
+    margin: 75px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font: normal 2.4em 'Lexend', sans-serif;
+    font-weight: 500;
+}
+
+.social-media{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-media a{
+    text-decoration: none;
+    margin: 0 6% 0 6%;
+}
+
+.social-media a img{
+    width: 75px;
+}
+
+
 /* ESTILIZAÇÃO PARA MOBILE*/
+
+@media only screen and (max-width: 730px){
+    footer{
+        flex-direction: column;
+    }
+    footer p{
+        margin-bottom: 30px;
+    }
+}
 
 @media only screen and (max-width: 550px){
     header{

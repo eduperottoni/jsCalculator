@@ -9,10 +9,10 @@ div.modal-container{
     display: none;
     align-items: center;
     justify-content: center;
-    font: bold 1.5em 'Lexend';
 }
 
 div.modal-content{
+    width: 50%;
     background: #dfdfdf;
     text-align: center;
     padding: 50px;
@@ -39,6 +39,19 @@ div.modal-content button.close-button{
     cursor:pointer;
     outline: none;
 }
+
+div.modal-content h3{
+    font: normal 2em 'Lexend';
+    font-weight: 700;
+}
+
+div.modal-content p{
+    font: normal 1.5em 'Lexend';
+}
+
+
+
+
 
 div.modal-container.mostrar{
     display: flex;
