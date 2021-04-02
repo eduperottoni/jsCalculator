@@ -1,6 +1,7 @@
 const btnEqual = document.querySelector('#equal')
 const input = document.querySelector('#view-fscreen-hist')
 const resInput = document.querySelector('#view-rscreen')
+const modalError = document.querySelector('#modal')
 
 function printOnInput(value){
     input.value += `${value}`
@@ -32,15 +33,24 @@ function validation(){
     
 }
 
-
 function calculate(){
     var result = validation()
-    console.log(result)
-    resInput.value = result
-    input.value = resInput.value
+    if (result == undefined){
+        activeModal()
+        c()
+    }else{
+        console.log(result)
+        resInput.value = result
+        input.value = resInput.value
+    }
 }
 
 function c(){
+    input.value = ''
+    resInput.value = ''
+}
+
+function ce(){
     if (resInput.value == ''){
         input.value = ''
     }else{
@@ -48,7 +58,10 @@ function c(){
     }
 }
 
-function ce(){
-    input.value = ''
-    resInput.value = ''
+function activeModal(){
+    modalError.classList.add('mostrar')
+}
+
+function closeModal(){
+    modalError.classList.remove('mostrar')
 }

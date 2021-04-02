@@ -9,6 +9,7 @@ div.modal-container{
     display: none;
     align-items: center;
     justify-content: center;
+    font: bold 1.5em 'Lexend';
 }
 
 div.modal-content{
@@ -33,7 +34,7 @@ div.modal-content button.close-button{
     border-radius: 50%;
     border: 2px solid black;
     box-shadow: 10px 10px 30px #000;
-    font: bold 15pt Arial;
+    font: bold 1em 'Lexend';
     background: #c23b3b;
     cursor:pointer;
     outline: none;
