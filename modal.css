@@ -71,3 +71,9 @@ div.modal-container.mostrar{
 .mostrar .modal-content{
     animation: modal 0.5s;
 }
+
+@media only screen and (max-width: 730px){
+    div.modal-content{
+        width: 80%;
+    }   
+}
