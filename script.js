@@ -35,7 +35,7 @@ function validation(){
 
 function calculate(){
     var result = validation()
-    if (result == undefined){
+    if (result == undefined || result == NaN){
         activeModal()
         c()
     }else{
